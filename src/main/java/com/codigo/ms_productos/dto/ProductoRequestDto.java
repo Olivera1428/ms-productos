@@ -30,4 +30,6 @@ public class ProductoRequestDto {
 
     @NotNull(message = "El estado es obligatorio")
     private Boolean estado;
+
+    private String imagenUrl;
 }

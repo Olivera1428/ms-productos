@@ -19,4 +19,5 @@ public class ProductoResponseDto {
     private Integer stock;
     private Boolean estado;
     private LocalDateTime fechaCreacion;
+    private String imagenUrl;
 }

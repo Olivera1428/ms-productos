@@ -27,6 +27,7 @@ public class ProductoServiceImpl implements ProductoService {
                 .precio(request.getPrecio())
                 .stock(request.getStock())
                 .estado(request.getEstado())
+                .imagenUrl(request.getImagenUrl())
                 .fechaCreacion(LocalDateTime.now())
                 .build();
 
@@ -68,6 +69,7 @@ public class ProductoServiceImpl implements ProductoService {
         producto.setPrecio(request.getPrecio());
         producto.setStock(request.getStock());
         producto.setEstado(request.getEstado());
+        producto.setImagenUrl(request.getImagenUrl());
 
         Producto actualizado = productoRepository.save(producto);
 
@@ -95,6 +97,7 @@ public class ProductoServiceImpl implements ProductoService {
                 .stock(producto.getStock())
                 .estado(producto.getEstado())
                 .fechaCreacion(producto.getFechaCreacion())
+                .imagenUrl(producto.getImagenUrl())
                 .build();
     }
 }

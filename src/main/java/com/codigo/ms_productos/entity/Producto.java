@@ -32,5 +32,7 @@ public class Producto {
 
     private Boolean estado;
 
+    private String imagenUrl;
+
     private LocalDateTime fechaCreacion;
 }
